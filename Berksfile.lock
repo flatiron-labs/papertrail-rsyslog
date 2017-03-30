@@ -4,13 +4,16 @@ DEPENDENCIES
   papertrail-rsyslog
     path: .
     metadata: true
-  rsyslog (~> 2.1.0)
+  rsyslog
+    git: https://github.com/chef-cookbooks/rsyslog.git
+    revision: 187c9d4027140db4bde0d72317d74acf1b106284
+    tag: v6.0.1
 
 GRAPH
   apt (6.0.1)
   chef_handler (2.1.0)
   minitest-handler (0.1.7)
     chef_handler (>= 0.0.0)
-  papertrail-rsyslog (1.2.0)
-    rsyslog (~> 2.1.0)
-  rsyslog (2.1.0)
+  papertrail-rsyslog (1.2.1)
+    rsyslog (~> 6.0.1)
+  rsyslog (6.0.1)
